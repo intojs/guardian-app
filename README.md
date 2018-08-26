@@ -1,27 +1,17 @@
-# GuardianApp
+## Project structure
+I have written about the four layers of single page applications here:
+https://hackernoon.com/architecting-single-page-applications-b842ea633c2e
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
+## Strict null checks
+Typescript is configured with strict null cheks in mind
+"strictNullChecks": true,
+"skipLibCheck": true
 
-## Development server
+## ngrx entity
+After our first interview, I have decided to give this library another chance and I thank you for the advice!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Mocking
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Article.mock.ts
+I have written about the technique of mocks and about how it helps in TDD here:
+https://itnext.io/mocking-in-typescript-a97267f7cea9

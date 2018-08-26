@@ -16,6 +16,13 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "joi": [
+        "node_modules/joi-browser"
+      ]
+    },
+    "strictNullChecks": true,
+    "skipLibCheck": true
   }
 }
