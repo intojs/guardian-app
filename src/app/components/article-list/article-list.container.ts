@@ -17,7 +17,12 @@ import * as articleActions from '../../store/article/actions/article.actions';
       (selectArticle)="onArticleSelect($event)"
     >
     </app-article-list>
-  `
+  `,
+  styles: [`
+    :host {
+      display: block;
+    }
+  `]
 })
 export class ArticleListContainer implements OnInit {
   articles$: Observable<Article[]>;

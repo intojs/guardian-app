@@ -10,7 +10,12 @@ import * as selectedArticleSelectors from '../../store/selected-article/selected
   selector: 'app-article-container',
   template: `
     <app-article [article]="article$ | async"></app-article>
-  `
+  `,
+  styles: [`
+    :host {
+      display: block;
+    }
+  `]
 })
 export class ArticleContainer implements OnInit {
   article$: Observable<Article>;

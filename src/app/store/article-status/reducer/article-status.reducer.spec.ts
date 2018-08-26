@@ -57,5 +57,13 @@ describe('article-status.reducer', () => {
     const action = new articleActions.GetArticlesError(error);
     expect(articleStatusReducer.reducer(initialState, action)).toEqual(expectedState);
   });
+
+  it('should selectError()', () => {
+    const error = Error('Something bad happened!');
+    const articleStatus = getArticleStatusMock({
+      error
+    });
+    expect(articleStatusReducer.selectError(articleStatus)).toEqual(error);
+  });
 });
 

@@ -3,21 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <nav class="navbar navbar-light bg-light">
-      <div class="navbar-brand">
-        Guardian Highlights
-      </div>
-    </nav>
-    <div class="container mt-3">
+    <ng-progress></ng-progress>
+    <app-nav class="mb-3"></app-nav>
+    <app-error-container></app-error-container>
+    <main class="container">
       <div class="row">
-        <div class="col-lg-8 mb-3">
+        <article class="col-lg-8 mb-3">
           <app-article-container></app-article-container>
-        </div>
-        <div class="col-lg-4 mb-3">
+        </article>
+        <aside class="col-lg-4 mb-3">
           <app-article-list-container></app-article-list-container>
-        </div>
+        </aside>
       </div>
-    </div>
+    </main>
   `,
 })
 export class AppComponent {

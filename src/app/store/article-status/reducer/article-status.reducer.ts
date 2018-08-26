@@ -31,3 +31,5 @@ export function reducer(state = initialState, action: articleActions.All): Artic
   }
 }
 
+export const selectError = (status: ArticleStatus): Error | undefined =>
+  status && status.error ? status.error : undefined;

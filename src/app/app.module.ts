@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpModule } from '@ngx-progressbar/http';
 
 import { AppStore } from './store/store.module';
 import { AppServicesModule } from './app-services/app-services.module';
@@ -11,7 +13,9 @@ import { AppComponent } from './components/app.component';
     BrowserModule,
     AppStore,
     AppServicesModule,
-    ComponentsModule
+    ComponentsModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpModule
   ],
   bootstrap: [AppComponent]
 })
