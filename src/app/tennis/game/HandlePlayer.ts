@@ -1,6 +1,6 @@
 import { Player } from './Player';
 
-export interface PlayerService {
+export interface HandlePlayer {
   createPlayer(name: string, points?: number): Player;
   getName(player: Player): string;
   getPoints(player: Player): number;

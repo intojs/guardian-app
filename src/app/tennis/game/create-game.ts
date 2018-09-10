@@ -1,6 +1,5 @@
-import { CreateGame } from './CreateGame';
-import { createGameFactory } from './game.factory';
+import { createGameFactory } from './create-game-factory';
+import { handlePlayer } from '../player/handle-player';
 import { calculateScore } from '../score/calculate-score';
-import { playerService } from '../player/player.service';
 
-export const createGame: CreateGame = createGameFactory(playerService, calculateScore);
+export const createGame = createGameFactory(handlePlayer, calculateScore);
