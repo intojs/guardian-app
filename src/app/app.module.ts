@@ -7,6 +7,7 @@ import { AppStore } from './store/store.module';
 import { AppServicesModule } from './app-services/app-services.module';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './components/app.component';
+import './index';
 
 @NgModule({
   imports: [
