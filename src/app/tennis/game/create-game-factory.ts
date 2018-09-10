@@ -1,23 +1,23 @@
 import { Game } from './Game';
-import { HandlePlayer } from './HandlePlayer';
+import { PlayerService } from './PlayerService';
 import { CalculateScore } from './CalculateScore';
 
-export const createGameFactory = (handlePlayer: HandlePlayer, calculateScore: CalculateScore) =>
+export const createGameFactory = (playerService: PlayerService, calculateScore: CalculateScore) =>
   (playerOneName: string, playerTwoName: string): Game => {
-    let playerOne = handlePlayer.createPlayer(playerOneName);
-    let playerTwo = handlePlayer.createPlayer(playerTwoName);
+    let playerOne = playerService.createPlayer(playerOneName);
+    let playerTwo = playerService.createPlayer(playerTwoName);
 
     const wonPoint = (playerName: string): void => {
-      if (handlePlayer.hasName(playerName, playerOne)) {
-        playerOne = handlePlayer.incrementPoints(playerOne);
+      if (playerService.hasName(playerName, playerOne)) {
+        playerOne = playerService.incrementPoints(playerOne);
       }
-      if (handlePlayer.hasName(playerName, playerTwo)) {
-        playerTwo = handlePlayer.incrementPoints(playerTwo);
+      if (playerService.hasName(playerName, playerTwo)) {
+        playerTwo = playerService.incrementPoints(playerTwo);
       }
     };
 
     const getScore = (): string =>
-      calculateScore(handlePlayer.getPoints(playerOne), handlePlayer.getPoints(playerTwo));
+      calculateScore(playerService.getPoints(playerOne), playerService.getPoints(playerTwo));
 
     return {
       wonPoint,

@@ -1,4 +1,4 @@
-import { HandlePlayer } from '../game/HandlePlayer';
+import { PlayerService } from '../game/PlayerService';
 import { Player } from '../game/Player';
 
 const createPlayer = (name: string, points?: number): Player => ({name, points: points || 0});
@@ -11,7 +11,7 @@ const hasName = (name: string, player: Player): boolean => name === player.name;
 
 const incrementPoints = (player: Player): Player => ({...player, points: player.points += 1});
 
-const handlePlayer: HandlePlayer = {
+const playerService: PlayerService = {
   createPlayer,
   getName,
   getPoints,
@@ -19,4 +19,4 @@ const handlePlayer: HandlePlayer = {
   incrementPoints
 };
 
-export { handlePlayer };
+export { playerService };
