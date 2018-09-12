@@ -8,6 +8,7 @@ import { AppServicesModule } from './app-services/app-services.module';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './components/app.component';
 import './index';
+import './tennis/main';
 
 @NgModule({
   imports: [

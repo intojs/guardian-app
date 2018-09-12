@@ -1,4 +1,4 @@
-import { createGame } from './tennis/game/create-game';
+import { createGame } from './tennis/game/createGame';
 
 let allScores = [
   [0, 0, 'Love-All'],

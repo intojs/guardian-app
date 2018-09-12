@@ -1,6 +1,7 @@
 We did this interesting tennis refactoring kata by Emily Bache yesterday at work.
 
-A group of 6 developers trying to untangle messy code, wonderful!
+A group of six developers trying to untangle code, wonderful!
+
 
 The kata was written in Java. Being a JavaScript developr and not a real engineer :), I decided to "contribute" from the side, being my vocal self.
 

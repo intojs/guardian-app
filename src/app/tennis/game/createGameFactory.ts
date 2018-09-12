@@ -1,9 +1,9 @@
-import { Game } from './Game';
+import { TennisGame } from './TennisGame';
 import { PlayerService } from './PlayerService';
 import { CalculateScore } from './CalculateScore';
 
 export const createGameFactory = (playerService: PlayerService, calculateScore: CalculateScore) =>
-  (playerOneName: string, playerTwoName: string): Game => {
+  (playerOneName: string, playerTwoName: string): TennisGame => {
     let playerOne = playerService.createPlayer(playerOneName);
     let playerTwo = playerService.createPlayer(playerTwoName);
 
